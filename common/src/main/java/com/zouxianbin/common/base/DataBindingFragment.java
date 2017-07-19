@@ -42,7 +42,7 @@ public abstract class DataBindingFragment<B extends ViewDataBinding> extends Fra
 
         mViewBinding = DataBindingUtil.bind(rootView);
 
-        return rootView;
+        return mViewBinding.getRoot();
     }
 
     public abstract int getLayoutId();
